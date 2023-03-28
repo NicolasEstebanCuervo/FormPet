@@ -1,0 +1,166 @@
+
+
+:root {
+  --Color-Gris:#484848;
+  --Color-Blanco:#fff;
+  --Color-Negro:#000;
+  --Input-Focus-CLaro:#868686;
+  --Input-Focus-Oscuro:#007bff;
+  --Fondo-Amarillo:#FFF35C;
+  --Fondo-Naranja:#FFB659;
+  --Fondo-Rojo:#FF4949;
+  --Fondo-Oscuro:#343a40;
+  --Fondo-Claro:#E8E7DA;
+  --Fondo-Oscuro-2:#1F1F1F;
+  --Fondo-Claro-2:#B7CFCD;
+  --Fondo-Boton-Modo-Oscuro:#0D6EFD;
+  --Fondo-Boton-Modo-Claro:#74D5CC;
+  --Fondo-Gris-Emoji:#D1D1D1;
+}
+
+.App{
+  padding:2% 0;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;  
+  transition: background 0.3s ease
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+  /* Estilos de cambio de colores */
+
+.hidden{
+  display: none !important;
+}
+
+.modo_claro{
+  background: var(--Fondo-Claro);
+  transition: background 0.3s ease;
+}
+
+.modo_oscuro{
+  background: var(--Fondo-Oscuro);
+  transition: background 0.3s ease;
+}
+
+.modo_claro_2{
+  background-color: var(--Fondo-Claro-2);
+  transition: background 0.3s ease;
+  -webkit-box-shadow: -2px 2px 76px 0px rgba(182,171,255,1);
+  -moz-box-shadow: -2px 2px 76px 0px rgba(182,171,255,1);
+  box-shadow: -2px 2px 76px 0px rgba(182,171,255,1);
+}
+
+.modo_oscuro_2{
+  background: var(--Fondo-Oscuro-2);
+  transition: background 0.3s ease;
+  -webkit-box-shadow: -1px 2px 36px -3px rgba(150,146,161,1);
+  -moz-box-shadow: -1px 2px 36px -3px rgba(150,146,161,1);
+  box-shadow: -1px 2px 36px -3px rgba(150,146,161,1);
+}
+
+.modo_oscuro_2_items{
+  background: var(--Fondo-Oscuro-2);
+  transition: background 0.5s ease;
+}
+
+.modo_claro_2_items{
+  background-color: var(--Fondo-Claro-2);
+  transition: background 0.5s ease;
+}
+
+.texto_gris{
+  color: var(--Color-Gris);
+  transition: background 0.5s ease;
+}
+
+.texto_blanco{
+  color: var(--Color-Blanco);
+  transition: background 0.5s ease;
+}
+
+.modo_oscuro_toggle{
+  background-color: var(--Color-Gris);
+  transition: background 0.5s ease;
+}
+
+.modo_claro_toggle{
+  background-color: var(--Color-Blanco);
+  transition: background 0.5s ease;
+}
+
+.input_oscuro{
+  color: var(--Color-Blanco);
+}
+
+.input_claro{
+  color: var(--Color-Gris); 
+} 
+
+.input_focus_oscuro:focus{
+  border-color: var(--Input-Focus-Oscuro);
+  outline: none;
+}
+
+.input_focus_claro:focus{
+  border-color: var(--Input-Focus-CLaro);
+  outline: none;
+}
+
+.modo_oscuro_boton{
+  background: var(--Fondo-Boton-Modo-Oscuro);
+  transition: background 0.5s ease;
+}
+
+.modo_claro_boton{
+  background: var(--Fondo-Boton-Modo-Claro);
+  transition: background 0.5s ease;
+}
+
+  /* Estilos del nav */
+
+.input_cambio_nombre{
+  height: 5.5vh;
+  margin: 5px 0;
+  background: transparent;
+  border:1px solid var(--Color-Blanco);
+  color: var(--Color-Blanco)ff;
+}
+
+.h1_cambio_nombre{
+  display: inline;
+}
+
+.input_nombre{
+  background: transparent;
+  border: 1px solid var(--Color-Gris);
+}
+
+
+.tareas-lista-contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:end;
+  margin-top: 5%;
+  width: 80vw;
+}
+
+.fondo_emoji{
+  background:var(--Fondo-Gris-Emoji);
+}
+
+
+@media (max-width: 1200px) {
+  .tareas-lista-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 5%;
+    width: 80vw;
+  }
+}

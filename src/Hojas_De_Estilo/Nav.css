@@ -1,0 +1,266 @@
+.encabezado{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% ;
+  transition: background 0.5s ease
+}
+
+.contenedor_izquierda{
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 15px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.imagen_logo{
+  max-height: 100px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.contenedor_izquierda h1{
+  font-size: 30px;
+  margin: auto;
+}
+
+.bi-pencil{
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.contenedor_derecha{
+  display: flex;
+} 
+
+.nav_items{
+  display:flex;
+}
+
+.contenedor_agregar{
+  margin: auto;
+}
+
+.logo_gato{
+  font-size: 30px;
+  position: relative;
+  bottom: 4px;
+  margin-right: 5px;
+}
+
+.contenedor_agregar h1{
+  font-size: 25px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.contenedor_agregar h1:hover{
+  border-bottom: 1px solid white;
+}
+
+.contenedor_ayuda{
+  display: flex;
+  margin: 0 0 0 20px;
+}
+
+.logo_ayuda{
+  padding: 0;
+  font-size: 30px;
+}
+
+.contenedor_ayuda h1{
+  font-size: 25px;
+  margin: auto 0;
+  padding-bottom: 5px;
+}
+
+.contenedor_ayuda h1:hover{
+  border-bottom: 1px solid white;
+}
+
+.boton{
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.logo_color{
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.nav_toggle{
+  display: none;
+}
+
+  /* Estilos boton hamburguesa */
+
+@media (max-width: 1000px) {
+ .encabezado{
+  margin-bottom: 100px;
+ }
+ 
+  .nav_items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;      
+    transform: translateX(-150%);
+    transition: 0.3s ease all;
+  }
+  
+  .nav_items.open{
+      transform: translateX(0) !important;
+      border-top: 1px solid gray;
+  }  
+  
+  .contenedor_agregar{
+    margin: auto 0;
+    padding: 5px 0px 5px 20px;
+  }
+  
+  .contenedor_agregar:hover{
+    background: #343a40;
+  }
+
+  .contenedor_agregar h1:hover{
+    background:#343a40;
+    border:0;
+  }
+
+  .logo_gato{
+    display: none;
+  }
+
+  .contenedor_ayuda{
+    display:inline;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+    border: 0;
+  } 
+
+  .contenedor_ayuda:hover{
+    background: #343a40;
+  }
+
+  .contenedor_ayuda h1:hover{
+    border:0;
+  }
+
+  .logo_ayuda{
+    display: none;
+  }
+
+  .nav_toggle{
+    display: flex !important;
+    flex-direction: column;                
+    margin: 15px;
+  }
+
+  .nav_toggle span{
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 2px;             
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .nav_toggle.open > span{
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .nav_toggle.open > span:nth-child(2){
+    display: none;
+  }
+
+  .nav_toggle.open > span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+}
+
+  /* Estilos 500-400px */
+
+@media (max-width: 500px) {
+  .contenedor_izquierda{
+    margin:0
+  }  
+
+  .contenedor_izquierda h1{
+    font-size: 7vw;
+  }
+
+  .imagen_logo{
+    width: 20vw;
+  }
+
+  .nav_items h1{
+    font-size: 6vw;
+  }
+
+  .logo_color{
+    font-size: 6vw;
+    margin: 0;
+  }
+
+  .nav_toggle.false{
+    margin: 15px 10px ;  
+  } 
+
+  .nav_toggle span{
+    height: 3px;
+  }
+
+  .nav_toggle.open > span{
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .nav_toggle.open > span:nth-child(2){
+    display: none;
+  }
+
+  .nav_toggle.open > span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 3px);
+  }
+}
+
+@media (max-width: 400px) {
+  .bi-pencil{
+    font-size: 6vw;
+  }
+
+  .logo_color{
+    font-size: 6vw;
+    margin: 0;
+  }
+
+  .nav_toggle span{
+    width: 5vw;
+    margin: 0 0 3px 0;
+    height: 0.5vh;
+  }
+
+  .nav_toggle.open{
+    margin: 15px 15px 15px 5px;
+  }
+
+  .nav_toggle.open > span{
+    transform:none;
+  }
+
+  .nav_toggle.open > span:nth-child(2){
+    transform:none;
+    display:inline;
+  }
+
+  .nav_toggle.open > span:nth-child(3){
+    transform: none;
+  }
+}
+
+

@@ -1,0 +1,173 @@
+
+.tarjeta_contenedor{
+  padding: 0px 20px 0px 15px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.contenedor_principal{
+  position: relative;
+  width: 50vw;
+  margin-bottom: 10vh;
+  padding: 10px 5px 15px;
+  text-align: center;
+}
+
+.titulo_tarjeta{
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.imagen{
+  border: 1px solid white;
+  margin: 0 2vw 0 1vw;
+  padding: 10px;
+}
+.tarea-texto{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: anywhere;
+}
+
+.tarea-texto h1{
+  font-size: 20px;
+  padding-top: 5px;
+  text-transform: capitalize;
+}
+
+.tarea-icono{
+  font-size: 25px;
+  margin: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.tarea-contenedor-iconos{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.icono_reloj{
+  font-size: 45px;
+  border: 1px solid white;
+  padding: 0 1vw;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.icono_alert{
+  font-size: 45px;
+  border: 1px solid white;
+  padding: 0 1vw;
+  color: white;
+}
+
+
+.fondo-azul{
+  background: #59C3FF;
+}
+
+.fondo-naranja{
+  background: #FFB659;
+}
+
+.fondo-rojo{
+  background: #FF4949;
+}
+
+@media (max-width: 900px) {
+
+  .titulo_tarjeta{
+    font-size: 4vw;
+  }
+
+  .imagen{
+    margin: 10px 0;
+  }
+
+  .tarea-icono{
+    font-size: 3vw;
+    margin: 0;
+    top: 3px;
+    right: 1px;
+  }
+
+  .contenedor_principal{
+    max-width: 400px;
+  }
+
+  .tarjeta_contenedor{
+    padding: 5px 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .tarea-contenedor-iconos{
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .icono_reloj{
+    font-size: 6vw;
+    padding: 0 2vw;
+    margin:0 2% 0 0;
+
+  }
+  
+  .icono_alert{
+    font-size: 6vw;
+    padding: 0 2vw;
+  }
+
+  .tarea-texto h1{
+    font-size: 3vw;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .titulo_tarjeta{
+    font-size: 4vw;
+  }
+
+  .imagen{
+    display: none;
+  }
+
+  .tarjeta_contenedor{
+    padding: 5px 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .tarea-contenedor-iconos{
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .icono_reloj{
+    font-size: 7vw;
+    padding: 0 2vw;
+    margin:0 2% 0 0;
+
+  }
+  
+  .icono_alert{
+    font-size: 7vw;
+    padding: 0 2vw;
+  }
+
+  .tarea-texto h1{
+    font-size: 4vw;
+  }
+
+}
