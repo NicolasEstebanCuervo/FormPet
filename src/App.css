@@ -1,5 +1,3 @@
-
-
 :root {
   --Color-Gris:#484848;
   --Color-Blanco:#fff;
@@ -7,6 +5,7 @@
   --Input-Focus-CLaro:#868686;
   --Input-Focus-Oscuro:#007bff;
   --Fondo-Amarillo:#FFF35C;
+  --Fondo-Amarrillo-2:#DFD844;
   --Fondo-Naranja:#FFB659;
   --Fondo-Rojo:#FF4949;
   --Fondo-Oscuro:#343a40;
@@ -141,7 +140,6 @@
   border: 1px solid var(--Color-Gris);
 }
 
-
 .tareas-lista-contenedor{
   display: flex;
   flex-wrap: wrap;
@@ -150,10 +148,8 @@
   width: 80vw;
 }
 
-.fondo_emoji{
-  background:var(--Fondo-Gris-Emoji);
-}
 
+  /* Estilos 1200-0px */
 
 @media (max-width: 1200px) {
   .tareas-lista-contenedor{

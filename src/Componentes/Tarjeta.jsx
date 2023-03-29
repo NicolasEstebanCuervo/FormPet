@@ -7,14 +7,15 @@ import { VscClose } from "react-icons/vsc";
 function Tarjeta(props){
 
   return(
-    <div className={`contenedor_principal ${props.fondo_tarjeta}`}>
+    
+    <div className={`contenedor_principal ${props.fondoTarjeta}`}>
       <h1 className="titulo_tarjeta">Informacion de: {props.nombre} </h1>
-      <VscClose className="tarea-icono" onClick={()=> props.eliminarTarea(props.id)}/>
+      <VscClose className="tarjeta_icono" onClick={()=> props.fnc_eliminarTarjeta(props.id)}/>
       <div className="tarjeta_contenedor">
-        <div className={`imagen ${props.fondo_emoji}`}>
-          <Emoji unified={props.emoji} className="Coso" size={60} emojiStyle="twitter" />
+        <div className="emoji_mascota">
+          <Emoji unified={props.emojiMascota} size={60} emojiStyle="twitter" />
         </div>
-          <div className="tarea-texto">
+          <div className="tarjeta_texto">
             <h1>
               Edad: {props.edad} Meses
             </h1>
@@ -28,7 +29,7 @@ function Tarjeta(props){
               Motivo: {props.motivo}
             </h1>
           </div>
-          <div className="tarea-contenedor-iconos">
+          <div className="tarjeta_contenedor_iconos">
             <i className={`bi bi-alarm icono_reloj ${props.cambiar}`}></i>   
             <i className={`bi bi-exclamation-triangle icono_alert ${props.cambiar}`}></i>   
           </div>
