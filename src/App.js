@@ -110,6 +110,7 @@ function App() {
           colorTexto={color ? "texto_blanco" : "texto_gris"}
           colorToggle={color ? "modo_claro_toggle" : "modo_oscuro_toggle"}
           itemsNav={color ? "modo_oscuro_2_items" : "modo_claro_2_items"}
+          colorHover={color ? "hover_oscuro" : "hover_claro"}
           
           setNombre={mostarInput ? (
             <input 

@@ -121,6 +121,17 @@
   transition: background 0.5s ease;
 }
 
+@media (max-width: 1000px) {
+  
+  .hover_claro:hover{
+    background: var(--Fondo-Claro);
+  }
+  
+  .hover_oscuro{
+    background: var(--Fondo-Oscuro);
+  }
+}
+
   /* Estilos del nav */
 
 .input_cambio_nombre{

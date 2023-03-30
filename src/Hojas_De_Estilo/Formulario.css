@@ -18,7 +18,7 @@
 
 .input_texto{
   width: 90%;
-  height: 7vh;
+  height: 40px;
   margin: 5px 0;
   padding: 0 1vw;
   background: transparent;
@@ -58,7 +58,7 @@
 .boton_enviar{
   border: 0;
   width: 90%;
-  height: 7vh;
+  height: 40px;
 }
 
   /* Estilos 400-0px */

@@ -16,11 +16,11 @@ function Nav (props){
       </div>
       <div className="contenedor_derecha">
         <div className={`nav_items ${props.itemsNav} ${abierto && "open"}`}>         
-          <div className="contenedor_agregar">
+          <div className={`contenedor_agregar ${props.colorHover}`}>
             <TbCat className="logo_gato"/>
             <button className={`boton ${props.colorTexto}`} onClick={props.fnc_agregar_mascota}><h1>Agregar mascota</h1></button>       
           </div>
-          <div className={`contenedor_ayuda ${props.colorTexto}`}>
+          <div className={`contenedor_ayuda ${props.colorHover}`}>
             <h1>Ayuda</h1>
             <i className="bi bi-exclamation-lg logo_ayuda"></i>
           </div>

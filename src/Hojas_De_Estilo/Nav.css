@@ -123,15 +123,6 @@
     margin: auto 0;
     padding: 5px 0px 5px 20px;
   }
-  
-  .contenedor_agregar:hover{
-    background: #343a40;
-  }
-
-  .contenedor_agregar h1:hover{
-    background:#343a40;
-    border:0;
-  }
 
   .logo_gato{
     display: none;
@@ -143,14 +134,6 @@
     margin: 0;
     border: 0;
   } 
-
-  .contenedor_ayuda:hover{
-    background: #343a40;
-  }
-
-  .contenedor_ayuda h1:hover{
-    border:0;
-  }
 
   .logo_ayuda{
     display: none;
