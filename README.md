@@ -52,12 +52,3 @@ En caso tal de que te interese alguna de las librerias usadas aca te dejo una li
 - Formik: npm install formik.
 - Lodash: npm install lodash.
    
----
-
-### 📱 Redes de contacto :
-   
-- Si quieres ver mi perfil de Linkedin puedes verlo dando click a este enlace: [NicolasCuervo](https://www.linkedin.com/in/nicolas-esteban-rojas-cuervo-9b72831ba/)
-
-- Si quieres contactarme por correo  "rojascuervo942@gmail.com"
-   
-- Si deseas ver mi perfil de twiter puedes verlo en : [EstebanCuervo](https://twitter.com/EstebanCuervo_)
