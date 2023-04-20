@@ -33,9 +33,9 @@ function App() {
     }
 
     if(tarea.tipo == "Gato" ||
-        tarea.tipo == "Gato"  ||
-        tarea.tipo == "Gato"  ||
-        tarea.tipo == "Gato") 
+        tarea.tipo == "Gata"  ||
+        tarea.tipo == "gato"  ||
+        tarea.tipo == "gato") 
     {
       tarea.emojiMascota=("1f63a")
     }
