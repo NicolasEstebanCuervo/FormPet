@@ -63,6 +63,7 @@ function Formulario (props){
     >
       {({errors, touched})=>(
         <Form className={`formulario ${props.formulario}`}> 
+          <i className="bi bi-x exit_icon" onClick={props.hidden}></i>
           <h1 className="texto_principal">Formulario de citas</h1>
           <Field
             type="text"

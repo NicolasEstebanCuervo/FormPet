@@ -104,7 +104,7 @@ function App() {
 
   return (
     <div className={color ? "App texto_blanco modo_oscuro" :"App texto_gris modo_claro"}>
-      <div className='container'>
+      <div className={!hidden ? "container_center" : "container"}>
         <Nav
           fondoNav={!hidden ? "hidden" : color ? "modo_oscuro_2 texto_blanco" :" modo_claro_2 texto_gris"}        
           colorTexto={color ? "texto_blanco" : "texto_gris"}
@@ -131,6 +131,7 @@ function App() {
           fnc_cambiar_color={cambiarColor}
         />
         <Formulario 
+          hidden={()=>setHidden(true)}
           formulario={hidden ? "hidden" : color ? "modo_oscuro_2" : "modo_claro_2"}
           inputNombre={hiddenNombre ? "hidden" : color ? "input_focus_oscuro texto_blanco" : "input_focus_claro"}
           colorInput={color ? "input_focus_oscuro texto_blanco" : "input_focus_claro"}
