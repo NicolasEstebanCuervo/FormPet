@@ -27,9 +27,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0 !important;
 }
 
 .container_center {
@@ -157,6 +157,7 @@
 }
 
 .input_nombre {
+    height: 4vh;
     background: transparent;
     border: 1px solid var(--Color-Gris);
 }
@@ -169,8 +170,6 @@
     width: 80vw;
 }
 
-/* Estilos 1200-0px */
-
 @media (max-width: 1200px) {
     .tareas-lista-contenedor {
         display: flex;
@@ -178,5 +177,27 @@
         justify-content: center;
         margin-top: 5%;
         width: 80vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .input_nombre {
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .input_nombre {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .input_nombre {
+        width: 40%;
+    }
+
+    .tareas-lista-contenedor {
+        width: 95%;
     }
 }

@@ -1,176 +1,200 @@
-.contenedor_principal{
-  position: relative;
-  max-width: 800px;
-  width: 50vw;
-  margin: 0px 10px 50px 10px;
-  padding: 10px 5px 15px;
-  text-align: center;
+.contenedor_principal {
+    position: relative;
+    max-width: 800px;
+    width: 50vw;
+    margin: 0px 10px 50px 10px;
+    padding: 10px 5px 15px;
+    text-align: center;
 }
 
-.titulo_tarjeta{
-  font-size: 30px;
-  text-transform: capitalize;
+.titulo_tarjeta {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.tarjeta_icono {
+    font-size: 25px;
+    margin: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.tarjeta_contenedor {
+    padding: 0px 20px 0px 15px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.emoji_mascota {
+    border: 1px solid white;
+    margin: 0 2vw 0 1vw;
+    padding: 10px;
+    background: var(--Fondo-Gris-Emoji);
+}
+
+.div_group{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta_texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+}
+
+.tarjeta_texto h1 {
+    font-size: 25px;
+}
+
+.tarjeta_contenedor_iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.icono_reloj {
+    font-size: 45px;
+    border: 1px solid white;
+    padding: 0 1vw;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.icono_alert {
+    font-size: 45px;
+    border: 1px solid white;
+    padding: 0 1vw;
+    color: white;
+}
+
+.fondo_amarillo {
+    background: var(--Fondo-Amarrillo-2);
+}
+
+.fondo_naranja {
+    background: var(--Fondo-Naranja);
+}
+
+.fondo_rojo {
+    background: var(--Fondo-Rojo);
+}
+
+@media (max-width: 1200px) {
+    .contenedor_principal {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .titulo_tarjeta {
+        font-size: 25px;
+    }
+
+    .tarjeta_texto h1 {
+        font-size: 23px;
+    }
+
+    .icono_reloj {
+        font-size: 40px;
+    }
+
+    .icono_alert {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contenedor_principal {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    .emoji_mascota {
+        padding: 7px;
+    }
+
+    .tarjeta_texto h1 {
+        font-size: 20px;
+    }
+
+    .icono_reloj {
+        font-size: 35px;
+    }
+
+    .icono_alert {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .tarjeta_texto h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+  .tarjeta_contenedor{
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .titulo_tarjeta {
+    font-size: 8vw;
 }
 
 .tarjeta_icono{
-  font-size: 25px;
-  margin: 5px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  cursor: pointer;
-}
-
-.tarjeta_contenedor{
-  padding: 0px 20px 0px 15px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-
-.emoji_mascota{
-  border: 1px solid white;
-  margin: 0 2vw 0 1vw;
-  padding: 10px;
-  background:var(--Fondo-Gris-Emoji);
+  top: 1%;
+  right: 1%;
+  font-size: 8vw;
 }
 
 .tarjeta_texto{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-wrap: anywhere;
+  width: 80%;
 }
 
-.tarjeta_texto h1{
-  font-size: 20px;
-  padding-top: 5px;
-  text-transform: capitalize;
-}
-
-.tarjeta_contenedor_iconos{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: flex-end;
-}
-
-.icono_reloj{
-  font-size: 45px;
-  border: 1px solid white;
-  padding: 0 1vw;
-  margin: 0 0 10px;
-  color: white;
-}
-
-.icono_alert{
-  font-size: 45px;
-  border: 1px solid white;
-  padding: 0 1vw;
-  color: white;
-}
-
-.fondo_amarillo{
-  background: var(--Fondo-Amarrillo-2);
-}
-
-.fondo_naranja{
-  background: var(--Fondo-Naranja);
-}
-
-.fondo_rojo{
-  background: var(--Fondo-Rojo);
-}
-
-  /* Estilos 900-601px */
-
-@media (max-width: 900px) {
-
-  .contenedor_principal{
-    max-width: 400px;
-    margin: 0 0 50px 0;
-  }
-
-  .titulo_tarjeta{
-    font-size: 4vw;
-  }
-
-  .tarjeta_icono{
-    font-size: 3vw;
-    margin: 0;
-    top: 3px;
-    right: 1px;
-  }
-
-  .tarjeta_contenedor{
-    padding: 5px 2vw;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .emoji_mascota{
-    margin: 10px 0;
-  }
-
-  .tarjeta_texto h1{
-    font-size: 3vw;
-  }
-
-  .tarjeta_contenedor_iconos{
-    flex-direction: row;
-    margin: 10px 0;
-  }
-
-  .icono_reloj{
+.tarjeta_texto h1 {
     font-size: 6vw;
-    padding: 0 2vw;
-    margin:0 2% 0 0;
-  }
-  
-  .icono_alert{
-    font-size: 6vw;
-    padding: 0 2vw;
-  }
 }
 
-  /* Estilos 600-0px */
-
-@media (max-width: 600px) {
-
-  .titulo_tarjeta{
-    font-size: 4vw;
+.icono_reloj {
+    font-size: 13vw;
   }
 
+.icono_alert {
+  font-size: 13vw;
+}
+} 
+
+@media (max-width: 300px) {
   .tarjeta_contenedor{
-    padding: 5px 2vw;
-    display: flex;
     flex-direction: column;
-    text-align: left;
+    gap: 5vh;
   }
 
-  .emoji_mascota{
-    display: none;
-  }
 
-  .tarea-texto h1{
-    font-size: 4vw;
-  }
-
-  .tarjeta_contenedor_iconos{
-    flex-direction: row;
-    margin: 10px 0;
-  }
-
-  .icono_reloj{
-    font-size: 7vw;
-    padding: 0 2vw;
-    margin:0 2% 0 0;
-
-  }
-  
-  .icono_alert{
-    font-size: 7vw;
-    padding: 0 2vw;
-  }
+.tarjeta_texto{
+  width: 80%;
 }
+
+.tarjeta_texto h1 {
+    font-size: 7vw;
+}
+
+.icono_reloj {
+    font-size: 15vw;
+  }
+
+.icono_alert {
+  font-size: 15vw;
+}
+} 

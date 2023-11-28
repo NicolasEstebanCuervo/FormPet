@@ -10,6 +10,7 @@
 
 .titulo_colores{
   font-size: 25px;
+  font-weight: bold;
 }
 
 .div_color{
@@ -55,28 +56,62 @@
 
   /* Estilos 660-0px */
 
-@media (max-width: 660px) {
-  
+@media (max-width: 450px) {
   .contenedor_colores{
     padding: 2vh 2vw;
     margin-right: 0;
     height: auto;
     margin-top:0;
     order: 1;
+    width: 100%;
   }
 
   .titulo_colores{
-    font-size: 6vw;
+    font-size: 7vw;
+  }
+
+  .div_color{
+    align-items: center;
+    gap: 2%;
   }
 
   .color_urgencia{
-    font-size: 4vw;
-    padding: 3px 10px;
-    margin-right: 5px;
-    width: 35%;
+    font-size: 4.5vw;
+    padding: 0.5vh 2vw;
+    margin-right: 0px;
   }
 
   .texto{
-    font-size: 4vw;
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .titulo_colores{
+    font-size: 8vw;
+  }
+
+  .color_urgencia{
+    font-size: 6vw;
+  }
+
+  .texto{
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 200px) {
+
+  .titulo_colores{
+    font-size: 9vw;
+  }
+
+  .color_urgencia{
+    font-size: 8vw;
+  }
+
+  .texto{
+    font-size: 8vw;
   }
 }
